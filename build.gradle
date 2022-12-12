@@ -18,6 +18,13 @@ subprojects {
     }
 }
 
+jar {
+    manifest {
+        attributes('Implementation-Title': 'stage2-build-tools-gradle',
+                'Implementation-Version': '1.0')
+    }
+}
+
 test {
     useJUnitPlatform()
 }
